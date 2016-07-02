@@ -1,0 +1,13 @@
+/*company page css*/
+main {
+	margin-top: 10px;
+	height: 70%;
+}
+#about_company {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#about_company img {
+	margin-bottom: 20px;
+}

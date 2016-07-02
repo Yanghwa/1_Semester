@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Coffee-mozilla-Product Order</title>
+		<link rel="stylesheet" href="css/style_nav.css" />
+		<link rel="stylesheet" href="css/order.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h1><a id="logo" href="index.html" title="It's always Coffee time!"></a></h1>
+				<menu>
+					<ul>
+						<li><a href="index.html" title="home">Home</a></li>
+						<li><a href="about.html" title="about">About</a>
+							<ul>
+								<li><a href="about.html#product" title="product">Product</a>
+									<ul>
+										<li><a href="about.html#product_coffee" title="about_coffee">Coffee</a></li>
+										<li><a href="about.html#product_menu" title="kinds_coffee">Menu</a></li>
+									</ul>
+								</li>
+								<li><a href="about.html#othershops" title="othershops">Other shops</a>
+							</ul>
+						</li>
+						<li><a href="order.html" title="order">Order</a></li>
+						<li><a href="support.html" title="support">Support</a>
+							<ul>
+								<li><a href="support.html#feedback" title="feedback">Feedback</a></li>
+								<li><a href="support.html#comment" title="contact">Contact</a></li>
+							</ul>
+						</li>
+						<li><a href="company.html" title="company">Company</a></li>
+					</ul>
+				</menu>
+			</nav>
+		</header>
+		<!-- main- order product-->
+		<main>
+			<h2>Payment Process</h2>
+			<h3>Edit Payment Information</h3>
+			<form id="edit_payment_info" method="get" action="process_form.php">
+				<input type="hidden" name="form_sent" value="1" />
+				<fieldset>
+					<legend>Billing Addess</legend>
+					<div>
+						<label for="fname">First Name</label>
+						<input id="fname" type="text" name="fname" maxlength="15" size="25" placeholder="maximum 15 characters, please" required/>  <!--size is data size saving DB maxlength is how many you can type -->
+					</div>
+					<div>
+						<label for="lname">Last Name</label>
+						<input id="lname" type="text" name="lname" maxlength="15" size="25" placeholder="maximum 15 characters, please" required/>
+					</div>
+					<div>
+						<label for="address1">Address Line 1</label>
+						<input id="address1" type="text" name="address1" maxlength="20" size="30" placeholder="City name please" required />
+					</div>
+					<div>
+						<label for="address2">Address Line 2</label>
+						<input id="address2" type="text" name="address2" maxlength="20" size="30" placeholder="street name please" required />
+					</div>
+					<div>
+						<label for="province">Province</label>
+						<select id="province" name="province">
+							<option value="choose">choose…</option>
+							<option value="AB">Alberta</option>
+							<option value="BC">British Colombia</option>
+							<option value="ON">Ontario</option>
+							<option value="MB">Manitoba</option>
+							<option value="NB">New Brunswick</option>
+							<option value="NL">Newfoundland</option>
+							<option value="NT">Northwest Territories</option>
+							<option value="NS">Nova Scotia</option>
+							<option value="NV">Nunavut</option>
+							<option value="PE">Prince Edward Island</option>
+							<option value="PQ">Québec</option>
+							<option value="SK">Saskatchewan</option>
+							<option value="YK">Yukon Territory</option>
+						</select>
+					</div>
+					<div>
+						<label for="phone">Phone</label>
+						<input id="phone" type="tel" name="phone" />
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input id="email" type="email" name="email" />
+					</div>
+					<div>
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" />
+
+					</div>
+					<div>
+						<label for="avatar">Avatar</label>
+						<input type="file" name="avatar" id="avatar" />
+
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Credit Card Details</legend>
+						<input type="radio" name="cctype" id="amex" value="amex" />
+						<label for="amex"><img src="order_images/amex_logo.gif" alt="American Express" /> American Express</label>
+
+						<input type="radio" name="cctype" id="mc" value="mc" />
+						<label for="mc"><img src="order_images/mc_logo.gif" alt="MasterCard" /> MasterCard</label>
+						<input type="radio" name="cctype" id="visa" value="visa" />
+						<label for="visa"><img src="order_images/visa_logo.gif" alt="Visa" /> Visa</label>
+					<div>
+						<label for="ccnumber">Credit Card Number</label>
+						<input id="ccnumber" type="text" name="ccnumber" value="" />
+					</div>
+					<div>
+						<label for="ccexpireyear">Expiration Year</label>
+						<select id="ccexpireyear" name="ccexpireyear">
+							<option value="2016">2016</option>
+							<option value="2017" selected>2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+
+						</select>
+					</div>
+					<div>
+						<label for="ccexpiremonth">Expiration Month</label>
+						<select name="ccexpiremonth" id="ccexpiremonth">
+							<option value="choose">choose…</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Keep Me Informed</legend>
+					<input type="checkbox" name="marketing[]" id="marketing1" value="newsletter" />
+					<label for="marketing1">Newsletter</label>
+					<input type="checkbox" name="marketing[]" id="marketing2" value="email" />
+					<label for="marketing2">Email Notifications</label>
+				</fieldset>
+				<fieldset>
+					<legend>How many coffee bean do you want?</legend>
+					<select name="coffeenumber" id="coffeenumber">
+						<option value="choose">choose…</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>Further information</legend>
+					<div>
+						<label for="birthday">Birthday</label>
+						<input type="date" name="birthday" id="birthday"/>
+					</div>
+					<div>
+						<label for="colour">Favourite Colour</label>
+						<input type="color" name="color" id="color"/>
+					</div>
+					<div>
+						<label for="rate">How much do you want coffee?</label>
+						<input type="range" step="10" />
+					</div>
+					<div>
+						<label for="type">Favourite type of coffee</label>
+						<input type="text" name="type" id="type"/>
+					</div>
+				</fieldset>
+				<button type="submit">Save Payment Settings</button>
+				<button type="reset">Clear Form</button>
+			</form>
+		</main>
+		<!-- footer - company logo and contact-->
+		<footer>
+			<div id="company_logo">
+				<img src="images/mozilla-dinosaur-head.png" alt="mozila foundation" width="60px" height="60px"/>
+				<p>Mozilla Foundation</p>
+			</div>
+			<div id="address">
+				<address>
+					<a>Address : 257 Johgnson Street, Barrie, ON </a>
+					<a>Tel: 647)863-2590 </a>
+					<a>E-mail: kellrj87@hotmail.com</a>
+				</address>
+				<p>COPYRIGHT &copy; 2016 Mozilla Foundation ALL RIGHTS RESERVED</p>
+			</div>
+		</footer>
+	</body>
+</html>

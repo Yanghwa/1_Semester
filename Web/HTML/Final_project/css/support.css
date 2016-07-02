@@ -1,0 +1,29 @@
+/*support page css*/
+main {
+	height: 600px;
+}
+#support {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#feedback {
+	left: auto;
+	right: auto;
+	padding-left: 50px;
+}
+#feedback label {
+	font-size: 25px;
+	font-weight: bold;
+}
+#contact {
+	height: 150px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+}
+#contact img {
+	float: left;
+}
+#contact p {
+	margin-left: 200px;
+}

@@ -1,0 +1,23 @@
+/*main page css*/
+main {
+	height: 450px;
+	margin-top: 50px;
+}
+#main_screen {
+	margin-left: 30%;
+}
+#main_screen p {
+	margin-left: 25%;
+	font-size: 20px;
+	font-weight: bold;
+	color: blue;
+}
+#selectscreen {
+	margin-left: 40%;
+	text-align: center;
+}
+#showscreen img {
+	margin-left: 5%;
+	width: 500px;
+	height: 300px;
+}

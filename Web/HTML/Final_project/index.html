@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Coffee-mozilla-It's Always Coffee Time</title>
+		<link rel="stylesheet" href="css/style_nav.css" />
+		<link rel="stylesheet" href="css/home.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<!-- navigation bar - responsive nav bar -->
+		<header>
+			<nav>
+				<h1><a id="logo" href="index.html" title="It's always Coffee time!"></a></h1>
+				<menu>
+					<ul>
+						<li><a href="index.html" title="home">Home</a></li>
+						<li><a href="about.html" title="about">About</a>
+							<ul>
+								<li><a href="about.html#product" title="product">Product</a>
+									<ul>
+										<li><a href="about.html#product_coffee" title="about_coffee">Coffee</a></li>
+										<li><a href="about.html#product_menu" title="kinds_coffee">Menu</a></li>
+									</ul>
+								</li>
+								<li><a href="about.html#othershops" title="othershops">Other shops</a>
+							</ul>
+						</li>
+						<li><a href="order.html" title="order">Order</a></li>
+						<li><a href="support.html" title="support">Support</a>
+							<ul>
+								<li><a href="support.html#feedback" title="feedback">Feedback</a></li>
+								<li><a href="support.html#comment" title="contact">Contact</a></li>
+							</ul>
+						</li>
+						<li><a href="company.html" title="company">Company</a></li>
+					</ul>
+				</menu>
+			</nav>
+		</header>
+		<!-- main screen using javascript-->
+		<main>
+			<div id="main_screen">
+				<p id="description1">Do you need coffee?</p>
+				<a id="showscreen" href="index.html">
+					<img id="screen_image" src="images/coffee.jpg" alt="Do you like coffee?" title="home screen"/>
+				</a>
+				<p id="description2" style="color:red">Here is the best coffee!</p>
+			</div>
+			<ul id="selectscreen">
+				<li>
+					<a href="images/coffee.jpg" title="home screen" link="index.html" context1="Do you need coffee?" context2="Here is the best coffee">○</a>
+				</li>
+				<li>
+					<a href="images/coffee2.jpg" title="about page" link="about.html" context1="If you want to know more" context2="Let's look at this page">○</a>
+				</li>
+				<li>
+					<a href="images/coffee3.jpg" title="order page" link="order.html" context1="To buy coffee" context2="Just order here">○</a>
+				</li>
+				<li>
+					<a href="images/coffee4.jpg" title="support page" link="support.html" context1="I need your help" context2="Please give me feedback">○</a>
+				</li>
+			</ul>
+
+		</main>
+		<!-- footer - company logo and contact-->
+		<footer>
+			<div id="company_logo">
+				<img src="images/mozilla-dinosaur-head.png" alt="mozila foundation" width="60px" height="60px"/>
+				<p>Mozilla Foundation</p>
+			</div>
+			<div id="address">
+				<address>
+					<div>Address : 257 Johgnson Street, Barrie, ON </div>
+					<div>Tel: 647)863-2590 </div>
+					<div>E-mail: kellrj87@hotmail.com</div>
+				</address>
+				<p>
+					<div>COPYRIGHT &copy; 2016 Mozilla Foundation</div>
+					<div>ALL RIGHTS RESERVED</div>
+				</p>
+			</div>
+		</footer>
+		<!-- script for using page change -->
+		<script src="js/page.js"></script>
+	</body>
+</html>

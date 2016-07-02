@@ -1,0 +1,46 @@
+/*about page css*/
+main {
+	margin-top: 10px;
+	height: 2400px;
+	line-height: 1.5;
+	text-indent: 25px;
+}
+figcaption {
+	text-align: center;
+}
+#definition_coffee, #coffee_benefit, #product_menu, #othershops {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#definition_coffee figure {
+	float: left;
+	margin-right: 30px;
+}
+
+#definition_coffee p {
+	padding-left: : 30px;
+}
+#coffee_benefit figure {
+	float: right;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+#product_menu figure {
+	margin-top: 20px;
+	border: 2px solid grey;
+	background-color: white;
+}
+#product_menu p {
+	text-align: center;
+	font-weight: bold;
+	color: red;
+}
+#othershops iframe {
+	margin-left: 15%;
+}
+#othershops  p{
+	text-align: center;
+	font-weight: bold;
+	color: blue;
+}
