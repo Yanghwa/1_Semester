@@ -1,4 +1,4 @@
-# 1_Semester
+# 1_Semester in Georgian
 the first stuff including Java, html
 
 1. Java- CashRegister and Final test;solving simple algorithm.
